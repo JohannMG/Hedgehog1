@@ -7,21 +7,22 @@
 //
 
 #import "ViewController.h"
+@import Foundation
 
 @interface ViewController ()
 
 @end
 
-@implementation ViewController
+@implementation ViewController {
+    BOOL img1 = NO;
+}
 
-;
+
 
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    
-    [self hideSlidingHedgehog];
     
     
     self.factsNextButton.hidden = YES;
@@ -29,7 +30,9 @@
 
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
+
 }
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -37,11 +40,13 @@
 }
 
 -(void)fadeInNextButton{
+    //hide image using alpha channel
     self.factsNextButton.alpha = 0;
     self.factsNextButton.hidden = NO;
     
+    //animate alpha channel to 1.00 opacity
     [UIView transitionWithView:self.factsNextButton
-                      duration: 1.3
+                      duration: 0.7
                        options: UIViewAnimationOptionCurveEaseInOut
                     animations: ^{
                         self.factsNextButton.alpha = 1;
@@ -53,15 +58,38 @@
     
 }
 
--(void)hideSlidingHedgehog{
-//    CGRect deviceDisplay = [[UIScreen mainScreen] bounds];
-//    CGFloat sWidth = deviceDisplay.size.width;
-//    CGRect newPos = self.hedgehogSlidingImg.frame;
-//    newPos.origin.x = sWidth - 20;
-//
-//    self.hedgehogSlidingImg.frame = newPos;
-//    
-//    NSLog(@"newpos: %f", newPos.origin.x);
+//Move hedge hog into screen
+-(void)slidingHedgehogIntoFrame{
+    
+    
+    
+    //move hedgehog to edge of screen
+    CGRect deviceFrame = [[UIScreen mainScreen] bounds ];
+    CGFloat maxScreenWidth = deviceFrame.size.width;
+    
+    CGRect hedgehogFrame = self.hedgehogSlidingImg.frame;
+    hedgehogFrame.origin.x = maxScreenWidth + 10;
+    self.hedgehogSlidingImg.frame = hedgehogFrame;
+    
+    CGRect endAnimation = self.hedgehogSlidingImg.frame;
+    endAnimation.origin.x = 0;
+    
+    NSLog(@"origin y value: %f", self.hedgehogSlidingImg.frame.origin.x);
+    
+    //animate hedge hog sliding in
+    
+    [UIView transitionWithView: self.hedgehogSlidingImg
+                      duration: 1.5
+                       options: UIViewAnimationOptionCurveEaseInOut
+                    animations: ^{
+                        self.hedgehogSlidingImg.frame = endAnimation;
+                    }
+                    completion: ^(BOOL finished){
+                        NSLog(@"Hedgehog 1 eased in");
+                    }
+     ];
+    
+
     
 }
 
@@ -69,6 +97,8 @@
 
 - (IBAction)factsScreenTapped:(id)sender {
     [self fadeInNextButton];
+    [self slidingHedgehogIntoFrame];
+
     
 }
 @end

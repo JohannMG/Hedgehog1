@@ -10,7 +10,7 @@
 
 @interface ViewController : UIViewController
 
-
+@private 
 
 //facts screen
 @property (strong, nonatomic) IBOutlet UILabel *europeFactLabel;
@@ -19,9 +19,10 @@
 @property (strong, nonatomic) IBOutlet UIButton *factsNextButton;
 
 -(void)fadeInNextButton;
--(void)hideSlidingHedgehog;
+-(void)slidingHedgehogIntoFrame;
 
 @property (strong, nonatomic) IBOutlet UITapGestureRecognizer *tapFactsEvent;
+@property (strong, nonatomic) IBOutlet UIImageView *hedgehogSlidingImg;
 
 - (IBAction)factsScreenTapped:(id)sender;
 

@@ -63,6 +63,12 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="Next"/>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hedgehog1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="g7e-So-ZXW">
+                                <rect key="frame" x="0.0" y="54" width="375" height="161"/>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="2000" y="54" width="375" height="161"/>
+                                </variation>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
@@ -77,6 +83,7 @@
                     <connections>
                         <outlet property="europeFactLabel" destination="Bxy-4k-iCs" id="Fwc-1b-D4i"/>
                         <outlet property="factsNextButton" destination="dVF-nC-6kZ" id="yE4-ZK-61k"/>
+                        <outlet property="hedgehogSlidingImg" destination="g7e-So-ZXW" id="hgM-dp-BAW"/>
                         <outlet property="hibernateFactsLabel" destination="k8P-2H-FPS" id="unm-dV-SK4"/>
                         <outlet property="speciesFactLabel" destination="OBA-D1-UMX" id="AMY-TN-kPe"/>
                         <outlet property="tapFactsEvent" destination="xeB-pL-x2w" id="EbS-Ym-4Pf"/>
@@ -94,4 +101,7 @@
             <point key="canvasLocation" x="576.5" y="656.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="hedgehog1.jpg" width="948" height="532"/>
+    </resources>
 </document>
