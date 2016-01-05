@@ -14,12 +14,15 @@
 
 @implementation ViewController
 
-
+;
 
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    [self hideSlidingHedgehog];
+    
     
     self.factsNextButton.hidden = YES;
 }
@@ -50,10 +53,23 @@
     
 }
 
-- (IBAction)testButtonClickedFadeInBtn:(id)sender{
-    NSLog(@"Pressed");
-    [self fadeInNextButton];
+-(void)hideSlidingHedgehog{
+//    CGRect deviceDisplay = [[UIScreen mainScreen] bounds];
+//    CGFloat sWidth = deviceDisplay.size.width;
+//    CGRect newPos = self.hedgehogSlidingImg.frame;
+//    newPos.origin.x = sWidth - 20;
+//
+//    self.hedgehogSlidingImg.frame = newPos;
+//    
+//    NSLog(@"newpos: %f", newPos.origin.x);
+    
 }
 
 
+
+- (IBAction)factsScreenTapped:(id)sender {
+    [self fadeInNextButton];
+    
+}
 @end
+

@@ -19,10 +19,11 @@
 @property (strong, nonatomic) IBOutlet UIButton *factsNextButton;
 
 -(void)fadeInNextButton;
+-(void)hideSlidingHedgehog;
 
 @property (strong, nonatomic) IBOutlet UITapGestureRecognizer *tapFactsEvent;
 
-- (IBAction)testButtonClickedFadeInBtn:(id)sender;
+- (IBAction)factsScreenTapped:(id)sender;
 
 
 @end

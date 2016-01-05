@@ -15,7 +15,9 @@
 		ED908B491C3C417800CCACE5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED908B471C3C417800CCACE5 /* LaunchScreen.storyboard */; };
 		ED908B541C3C417800CCACE5 /* Hedgehog1Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = ED908B531C3C417800CCACE5 /* Hedgehog1Tests.m */; };
 		ED908B5F1C3C417800CCACE5 /* Hedgehog1UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = ED908B5E1C3C417800CCACE5 /* Hedgehog1UITests.m */; };
-		EDCFE6221C3C5CC800F0F6C1 /* hedgehog files in Resources */ = {isa = PBXBuildFile; fileRef = EDCFE6211C3C5CC800F0F6C1 /* hedgehog files */; };
+		EDCFE6271C3C614800F0F6C1 /* hedgehog1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EDCFE6241C3C614800F0F6C1 /* hedgehog1.jpg */; };
+		EDCFE6281C3C614800F0F6C1 /* hedgehog2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EDCFE6251C3C614800F0F6C1 /* hedgehog2.jpg */; };
+		EDCFE6291C3C614800F0F6C1 /* hedgehog3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = EDCFE6261C3C614800F0F6C1 /* hedgehog3.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,7 +54,9 @@
 		ED908B5A1C3C417800CCACE5 /* Hedgehog1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Hedgehog1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED908B5E1C3C417800CCACE5 /* Hedgehog1UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Hedgehog1UITests.m; sourceTree = "<group>"; };
 		ED908B601C3C417800CCACE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EDCFE6211C3C5CC800F0F6C1 /* hedgehog files */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "hedgehog files"; sourceTree = SOURCE_ROOT; };
+		EDCFE6241C3C614800F0F6C1 /* hedgehog1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hedgehog1.jpg; sourceTree = "<group>"; };
+		EDCFE6251C3C614800F0F6C1 /* hedgehog2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hedgehog2.jpg; sourceTree = "<group>"; };
+		EDCFE6261C3C614800F0F6C1 /* hedgehog3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hedgehog3.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,12 +107,12 @@
 		ED908B381C3C417800CCACE5 /* Hedgehog1 */ = {
 			isa = PBXGroup;
 			children = (
+				EDCFE62A1C3C617300F0F6C1 /* hedgeHogFactPhotos */,
 				ED908B3C1C3C417800CCACE5 /* AppDelegate.h */,
 				ED908B3D1C3C417800CCACE5 /* AppDelegate.m */,
 				ED908B3F1C3C417800CCACE5 /* ViewController.h */,
 				ED908B401C3C417800CCACE5 /* ViewController.m */,
 				ED908B421C3C417800CCACE5 /* Main.storyboard */,
-				EDCFE6211C3C5CC800F0F6C1 /* hedgehog files */,
 				ED908B451C3C417800CCACE5 /* Assets.xcassets */,
 				ED908B471C3C417800CCACE5 /* LaunchScreen.storyboard */,
 				ED908B4A1C3C417800CCACE5 /* Info.plist */,
@@ -141,6 +145,16 @@
 				ED908B601C3C417800CCACE5 /* Info.plist */,
 			);
 			path = Hedgehog1UITests;
+			sourceTree = "<group>";
+		};
+		EDCFE62A1C3C617300F0F6C1 /* hedgeHogFactPhotos */ = {
+			isa = PBXGroup;
+			children = (
+				EDCFE6241C3C614800F0F6C1 /* hedgehog1.jpg */,
+				EDCFE6251C3C614800F0F6C1 /* hedgehog2.jpg */,
+				EDCFE6261C3C614800F0F6C1 /* hedgehog3.jpeg */,
+			);
+			name = hedgeHogFactPhotos;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,10 +260,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EDCFE6221C3C5CC800F0F6C1 /* hedgehog files in Resources */,
+				EDCFE6271C3C614800F0F6C1 /* hedgehog1.jpg in Resources */,
 				ED908B491C3C417800CCACE5 /* LaunchScreen.storyboard in Resources */,
 				ED908B461C3C417800CCACE5 /* Assets.xcassets in Resources */,
 				ED908B441C3C417800CCACE5 /* Main.storyboard in Resources */,
+				EDCFE6291C3C614800F0F6C1 /* hedgehog3.jpeg in Resources */,
+				EDCFE6281C3C614800F0F6C1 /* hedgehog2.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
