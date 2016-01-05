@@ -63,6 +63,9 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="Next"/>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hedgehog1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="fbe-OZ-0gb">
+                                <rect key="frame" x="0.0" y="46" width="375" height="206"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
@@ -94,4 +97,7 @@
             <point key="canvasLocation" x="576.5" y="656.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="hedgehog1.jpg" width="948" height="532"/>
+    </resources>
 </document>

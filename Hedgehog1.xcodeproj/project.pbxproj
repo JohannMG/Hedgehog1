@@ -15,6 +15,7 @@
 		ED908B491C3C417800CCACE5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED908B471C3C417800CCACE5 /* LaunchScreen.storyboard */; };
 		ED908B541C3C417800CCACE5 /* Hedgehog1Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = ED908B531C3C417800CCACE5 /* Hedgehog1Tests.m */; };
 		ED908B5F1C3C417800CCACE5 /* Hedgehog1UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = ED908B5E1C3C417800CCACE5 /* Hedgehog1UITests.m */; };
+		EDCFE6221C3C5CC800F0F6C1 /* hedgehog files in Resources */ = {isa = PBXBuildFile; fileRef = EDCFE6211C3C5CC800F0F6C1 /* hedgehog files */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		ED908B5A1C3C417800CCACE5 /* Hedgehog1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Hedgehog1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED908B5E1C3C417800CCACE5 /* Hedgehog1UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Hedgehog1UITests.m; sourceTree = "<group>"; };
 		ED908B601C3C417800CCACE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDCFE6211C3C5CC800F0F6C1 /* hedgehog files */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "hedgehog files"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				ED908B3F1C3C417800CCACE5 /* ViewController.h */,
 				ED908B401C3C417800CCACE5 /* ViewController.m */,
 				ED908B421C3C417800CCACE5 /* Main.storyboard */,
+				EDCFE6211C3C5CC800F0F6C1 /* hedgehog files */,
 				ED908B451C3C417800CCACE5 /* Assets.xcassets */,
 				ED908B471C3C417800CCACE5 /* LaunchScreen.storyboard */,
 				ED908B4A1C3C417800CCACE5 /* Info.plist */,
@@ -243,6 +246,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDCFE6221C3C5CC800F0F6C1 /* hedgehog files in Resources */,
 				ED908B491C3C417800CCACE5 /* LaunchScreen.storyboard in Resources */,
 				ED908B461C3C417800CCACE5 /* Assets.xcassets in Resources */,
 				ED908B441C3C417800CCACE5 /* Main.storyboard in Resources */,
@@ -500,6 +504,7 @@
 				ED908B651C3C417800CCACE5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ED908B661C3C417800CCACE5 /* Build configuration list for PBXNativeTarget "Hedgehog1Tests" */ = {
 			isa = XCConfigurationList;
@@ -508,6 +513,7 @@
 				ED908B681C3C417800CCACE5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ED908B691C3C417800CCACE5 /* Build configuration list for PBXNativeTarget "Hedgehog1UITests" */ = {
 			isa = XCConfigurationList;
@@ -516,6 +522,7 @@
 				ED908B6B1C3C417800CCACE5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
