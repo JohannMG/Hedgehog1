@@ -108,6 +108,9 @@
     
 }
 
+/*---------------
+ | Swipe Actions all send to the universal method call
+------------------------------------------------------------------------------*/
 
 - (IBAction)factsSwipedRight:(UISwipeGestureRecognizer *)sender {
     [self univerSwipeActionWithXOffset: -1 * self.swipeAnimationOffset yOffset: 0];
