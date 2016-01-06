@@ -1,5 +1,5 @@
 //
-//  JMGCustomUITableView.h
+//  MenuTableViewController.h
 //  Hedgehog1
 //
 //  Created by Garces, Johann (TEKsystems) on 1/6/16.
@@ -7,8 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "JMGCustomUITableViewCell.h"
 
-@interface JMGCustomUITableView : UITableView
+@interface MenuTableViewController : UITableView
 
 @end

@@ -20,9 +20,8 @@
 		EDCFE6291C3C614800F0F6C1 /* hedgehog3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = EDCFE6261C3C614800F0F6C1 /* hedgehog3.jpeg */; };
 		EDCFE62C1C3D784C00F0F6C1 /* hedgehogExamples.plist in Resources */ = {isa = PBXBuildFile; fileRef = EDCFE62B1C3D784C00F0F6C1 /* hedgehogExamples.plist */; };
 		EDCFE6301C3D7F1200F0F6C1 /* testview.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDCFE62F1C3D7F1200F0F6C1 /* testview.xib */; };
-		EDCFE6331C3D96F900F0F6C1 /* TableMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDCFE6321C3D96F900F0F6C1 /* TableMenuViewController.m */; };
-		EDCFE6361C3D9D7000F0F6C1 /* JMGCustomUITableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EDCFE6351C3D9D7000F0F6C1 /* JMGCustomUITableViewCell.m */; };
-		EDCFE63A1C3D9EF200F0F6C1 /* JMGCustomUITableView.m in Sources */ = {isa = PBXBuildFile; fileRef = EDCFE6391C3D9EF200F0F6C1 /* JMGCustomUITableView.m */; };
+		EDCFE63D1C3DB7DF00F0F6C1 /* MenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDCFE63C1C3DB7DF00F0F6C1 /* MenuTableViewController.m */; };
+		EDCFE6401C3DB8E500F0F6C1 /* CustomMenuTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EDCFE63F1C3DB8E500F0F6C1 /* CustomMenuTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,12 +63,10 @@
 		EDCFE6261C3C614800F0F6C1 /* hedgehog3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hedgehog3.jpeg; sourceTree = "<group>"; };
 		EDCFE62B1C3D784C00F0F6C1 /* hedgehogExamples.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = hedgehogExamples.plist; sourceTree = "<group>"; };
 		EDCFE62F1C3D7F1200F0F6C1 /* testview.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = testview.xib; sourceTree = "<group>"; };
-		EDCFE6311C3D96F900F0F6C1 /* TableMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableMenuViewController.h; sourceTree = "<group>"; };
-		EDCFE6321C3D96F900F0F6C1 /* TableMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableMenuViewController.m; sourceTree = "<group>"; };
-		EDCFE6341C3D9D7000F0F6C1 /* JMGCustomUITableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JMGCustomUITableViewCell.h; path = CustomUIElements/JMGCustomUITableViewCell.h; sourceTree = "<group>"; };
-		EDCFE6351C3D9D7000F0F6C1 /* JMGCustomUITableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JMGCustomUITableViewCell.m; path = CustomUIElements/JMGCustomUITableViewCell.m; sourceTree = "<group>"; };
-		EDCFE6381C3D9EF200F0F6C1 /* JMGCustomUITableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JMGCustomUITableView.h; path = CustomUIElements/JMGCustomUITableView.h; sourceTree = "<group>"; };
-		EDCFE6391C3D9EF200F0F6C1 /* JMGCustomUITableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JMGCustomUITableView.m; path = CustomUIElements/JMGCustomUITableView.m; sourceTree = "<group>"; };
+		EDCFE63B1C3DB7DF00F0F6C1 /* MenuTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MenuTableViewController.h; path = CustomUIElements/MenuTableViewController.h; sourceTree = "<group>"; };
+		EDCFE63C1C3DB7DF00F0F6C1 /* MenuTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MenuTableViewController.m; path = CustomUIElements/MenuTableViewController.m; sourceTree = "<group>"; };
+		EDCFE63E1C3DB8E500F0F6C1 /* CustomMenuTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomMenuTableViewCell.h; path = CustomUIElements/CustomMenuTableViewCell.h; sourceTree = "<group>"; };
+		EDCFE63F1C3DB8E500F0F6C1 /* CustomMenuTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomMenuTableViewCell.m; path = CustomUIElements/CustomMenuTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,12 +172,10 @@
 		EDCFE6371C3D9E9100F0F6C1 /* TableMenu */ = {
 			isa = PBXGroup;
 			children = (
-				EDCFE6381C3D9EF200F0F6C1 /* JMGCustomUITableView.h */,
-				EDCFE6391C3D9EF200F0F6C1 /* JMGCustomUITableView.m */,
-				EDCFE6341C3D9D7000F0F6C1 /* JMGCustomUITableViewCell.h */,
-				EDCFE6351C3D9D7000F0F6C1 /* JMGCustomUITableViewCell.m */,
-				EDCFE6311C3D96F900F0F6C1 /* TableMenuViewController.h */,
-				EDCFE6321C3D96F900F0F6C1 /* TableMenuViewController.m */,
+				EDCFE63E1C3DB8E500F0F6C1 /* CustomMenuTableViewCell.h */,
+				EDCFE63F1C3DB8E500F0F6C1 /* CustomMenuTableViewCell.m */,
+				EDCFE63B1C3DB7DF00F0F6C1 /* MenuTableViewController.h */,
+				EDCFE63C1C3DB7DF00F0F6C1 /* MenuTableViewController.m */,
 				EDCFE62B1C3D784C00F0F6C1 /* hedgehogExamples.plist */,
 			);
 			name = TableMenu;
@@ -321,12 +316,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EDCFE6331C3D96F900F0F6C1 /* TableMenuViewController.m in Sources */,
 				ED908B411C3C417800CCACE5 /* ViewController.m in Sources */,
+				EDCFE6401C3DB8E500F0F6C1 /* CustomMenuTableViewCell.m in Sources */,
 				ED908B3E1C3C417800CCACE5 /* AppDelegate.m in Sources */,
-				EDCFE63A1C3D9EF200F0F6C1 /* JMGCustomUITableView.m in Sources */,
-				EDCFE6361C3D9D7000F0F6C1 /* JMGCustomUITableViewCell.m in Sources */,
 				ED908B3B1C3C417800CCACE5 /* main.m in Sources */,
+				EDCFE63D1C3DB7DF00F0F6C1 /* MenuTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
