@@ -10,9 +10,13 @@
 
 @interface ViewController : UIViewController
 
-@private 
 
 //facts screen
+
+@property (nonatomic) BOOL fact1Active;
+@property (nonatomic) BOOL fact2Active;
+@property (nonatomic) BOOL fact3Active;
+
 @property (strong, nonatomic) IBOutlet UILabel *europeFactLabel;
 @property (strong, nonatomic) IBOutlet UILabel *speciesFactLabel;
 @property (strong, nonatomic) IBOutlet UILabel *hibernateFactsLabel;

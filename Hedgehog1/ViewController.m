@@ -7,15 +7,13 @@
 //
 
 #import "ViewController.h"
-@import Foundation
 
 @interface ViewController ()
 
 @end
 
-@implementation ViewController {
-    BOOL img1 = NO;
-}
+@implementation ViewController
+
 
 
 
@@ -24,7 +22,10 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    
+    //init with clean appearance
+    self.fact1Active = NO;
+    self.fact2Active = NO;
+    self.fact3Active = NO;
     self.factsNextButton.hidden = YES;
 }
 
@@ -39,7 +40,7 @@
     // Dispose of any resources that can be recreated.
 }
 
--(void)fadeInNextButton{
+- (void)fadeInNextButton{
     //hide image using alpha channel
     self.factsNextButton.alpha = 0;
     self.factsNextButton.hidden = NO;
@@ -61,7 +62,9 @@
 //Move hedge hog into screen
 -(void)slidingHedgehogIntoFrame{
     
-    
+    if (self.fact1Active){
+        return;
+    }
     
     //move hedgehog to edge of screen
     CGRect deviceFrame = [[UIScreen mainScreen] bounds ];
@@ -88,6 +91,8 @@
                         NSLog(@"Hedgehog 1 eased in");
                     }
      ];
+    
+    self.fact1Active = YES; 
     
 
     
