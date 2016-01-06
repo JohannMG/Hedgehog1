@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>HedgeHogs</key>
+	<dict>
+		<key>facts</key>
+		<array>
+			<string>Day and Night hedgehog: Delegation&quot;</string>
+			<string>Hedgehog weather: RESTful Service</string>
+			<string>Hedgehog run!</string>
+		</array>
+		<key>iosIsAwesome</key>
+		<true/>
+		<key>blah</key>
+		<string>blahblah</string>
+	</dict>
+</dict>
+</plist>

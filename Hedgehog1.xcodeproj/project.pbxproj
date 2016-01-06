@@ -18,6 +18,7 @@
 		EDCFE6271C3C614800F0F6C1 /* hedgehog1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EDCFE6241C3C614800F0F6C1 /* hedgehog1.jpg */; };
 		EDCFE6281C3C614800F0F6C1 /* hedgehog2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EDCFE6251C3C614800F0F6C1 /* hedgehog2.jpg */; };
 		EDCFE6291C3C614800F0F6C1 /* hedgehog3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = EDCFE6261C3C614800F0F6C1 /* hedgehog3.jpeg */; };
+		EDCFE62C1C3D784C00F0F6C1 /* hedgehogExamples.plist in Resources */ = {isa = PBXBuildFile; fileRef = EDCFE62B1C3D784C00F0F6C1 /* hedgehogExamples.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		EDCFE6241C3C614800F0F6C1 /* hedgehog1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hedgehog1.jpg; sourceTree = "<group>"; };
 		EDCFE6251C3C614800F0F6C1 /* hedgehog2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hedgehog2.jpg; sourceTree = "<group>"; };
 		EDCFE6261C3C614800F0F6C1 /* hedgehog3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hedgehog3.jpeg; sourceTree = "<group>"; };
+		EDCFE62B1C3D784C00F0F6C1 /* hedgehogExamples.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = hedgehogExamples.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 				ED908B3F1C3C417800CCACE5 /* ViewController.h */,
 				ED908B401C3C417800CCACE5 /* ViewController.m */,
 				ED908B421C3C417800CCACE5 /* Main.storyboard */,
+				EDCFE62B1C3D784C00F0F6C1 /* hedgehogExamples.plist */,
 				ED908B451C3C417800CCACE5 /* Assets.xcassets */,
 				ED908B471C3C417800CCACE5 /* LaunchScreen.storyboard */,
 				ED908B4A1C3C417800CCACE5 /* Info.plist */,
@@ -261,6 +264,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EDCFE6271C3C614800F0F6C1 /* hedgehog1.jpg in Resources */,
+				EDCFE62C1C3D784C00F0F6C1 /* hedgehogExamples.plist in Resources */,
 				ED908B491C3C417800CCACE5 /* LaunchScreen.storyboard in Resources */,
 				ED908B461C3C417800CCACE5 /* Assets.xcassets in Resources */,
 				ED908B441C3C417800CCACE5 /* Main.storyboard in Resources */,
