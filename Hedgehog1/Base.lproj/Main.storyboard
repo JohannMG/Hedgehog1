@@ -19,6 +19,7 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bxy-4k-iCs">
                                 <rect key="frame" x="20" y="63" width="335" height="144"/>
+                                <gestureRecognizers/>
                                 <attributedString key="attributedText">
                                     <fragment>
                                         <string key="content">European hedgehogs in the UK hibernate throughout winter. They feed as much as possible during the autumn and in around October build its nests of leaves and grass in which to hibernate. </string>
@@ -69,13 +70,29 @@
                                     <rect key="frame" x="2000" y="54" width="375" height="161"/>
                                 </variation>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hedgehog2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="bhq-wU-Ko7">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="73" y="219" width="236" height="161"/>
+                                </variation>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="bhq-wU-Ko7"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular">
+                            <mask key="subviews">
+                                <include reference="bhq-wU-Ko7"/>
+                            </mask>
+                        </variation>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="EH4-2g-VJ3" appends="YES" id="yjo-I8-NPP"/>
                             <outletCollection property="gestureRecognizers" destination="xeB-pL-x2w" appends="YES" id="s7B-RW-auU"/>
-                            <outletCollection property="gestureRecognizers" destination="jPZ-HC-xTQ" appends="YES" id="eEd-8v-jvt"/>
+                            <outletCollection property="gestureRecognizers" destination="nUS-Xg-V12" appends="YES" id="pOk-KC-w6c"/>
                         </connections>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
@@ -85,6 +102,7 @@
                         <outlet property="factsNextButton" destination="dVF-nC-6kZ" id="yE4-ZK-61k"/>
                         <outlet property="hedgehogSlidingImg" destination="g7e-So-ZXW" id="hgM-dp-BAW"/>
                         <outlet property="hibernateFactsLabel" destination="k8P-2H-FPS" id="unm-dV-SK4"/>
+                        <outlet property="scalingHedgehogImg" destination="bhq-wU-Ko7" id="Cwr-Fz-pqF"/>
                         <outlet property="speciesFactLabel" destination="OBA-D1-UMX" id="AMY-TN-kPe"/>
                         <outlet property="tapFactsEvent" destination="xeB-pL-x2w" id="EbS-Ym-4Pf"/>
                     </connections>
@@ -96,12 +114,17 @@
                         <action selector="factsScreenTapped:" destination="BYZ-38-t0r" id="01f-Do-QLX"/>
                     </connections>
                 </tapGestureRecognizer>
-                <pinchGestureRecognizer id="jPZ-HC-xTQ"/>
+                <pinchGestureRecognizer id="nUS-Xg-V12">
+                    <connections>
+                        <action selector="scalingPinchOnFacts:" destination="BYZ-38-t0r" id="5Ot-wC-8om"/>
+                    </connections>
+                </pinchGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="576.5" y="656.5"/>
+            <point key="canvasLocation" x="576.5" y="655.875"/>
         </scene>
     </scenes>
     <resources>
         <image name="hedgehog1.jpg" width="948" height="532"/>
+        <image name="hedgehog2.jpg" width="620" height="413"/>
     </resources>
 </document>
