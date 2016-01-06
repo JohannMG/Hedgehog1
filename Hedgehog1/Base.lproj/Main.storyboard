@@ -76,23 +76,34 @@
                                     <rect key="frame" x="73" y="219" width="236" height="161"/>
                                 </variation>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hedgehog3.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="rKx-E1-b9i">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="24" y="425" width="335" height="178"/>
+                                </variation>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="bhq-wU-Ko7"/>
+                                <exclude reference="rKx-E1-b9i"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular">
                             <mask key="subviews">
                                 <include reference="bhq-wU-Ko7"/>
+                                <include reference="rKx-E1-b9i"/>
                             </mask>
                         </variation>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="EH4-2g-VJ3" appends="YES" id="yjo-I8-NPP"/>
                             <outletCollection property="gestureRecognizers" destination="xeB-pL-x2w" appends="YES" id="s7B-RW-auU"/>
                             <outletCollection property="gestureRecognizers" destination="nUS-Xg-V12" appends="YES" id="pOk-KC-w6c"/>
+                            <outletCollection property="gestureRecognizers" destination="wJn-Il-JaI" appends="YES" id="Hs4-Zt-cSb"/>
+                            <outletCollection property="gestureRecognizers" destination="YA3-VY-DVn" appends="YES" id="1QC-ts-Plf"/>
+                            <outletCollection property="gestureRecognizers" destination="2Au-B1-KAP" appends="YES" id="Nbt-W2-6XZ"/>
                         </connections>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
@@ -104,11 +115,20 @@
                         <outlet property="hibernateFactsLabel" destination="k8P-2H-FPS" id="unm-dV-SK4"/>
                         <outlet property="scalingHedgehogImg" destination="bhq-wU-Ko7" id="Cwr-Fz-pqF"/>
                         <outlet property="speciesFactLabel" destination="OBA-D1-UMX" id="AMY-TN-kPe"/>
-                        <outlet property="tapFactsEvent" destination="xeB-pL-x2w" id="EbS-Ym-4Pf"/>
+                        <outlet property="swipingHedgehogImg" destination="rKx-E1-b9i" id="d92-Mg-zNA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="right" id="EH4-2g-VJ3"/>
+                <swipeGestureRecognizer direction="down" id="wJn-Il-JaI">
+                    <connections>
+                        <action selector="factsSwipedDown:" destination="BYZ-38-t0r" id="ya0-Lg-R3N"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="EH4-2g-VJ3">
+                    <connections>
+                        <action selector="factsSwipedRight:" destination="BYZ-38-t0r" id="CuK-cy-bZ0"/>
+                    </connections>
+                </swipeGestureRecognizer>
                 <tapGestureRecognizer id="xeB-pL-x2w">
                     <connections>
                         <action selector="factsScreenTapped:" destination="BYZ-38-t0r" id="01f-Do-QLX"/>
@@ -119,6 +139,16 @@
                         <action selector="scalingPinchOnFacts:" destination="BYZ-38-t0r" id="5Ot-wC-8om"/>
                     </connections>
                 </pinchGestureRecognizer>
+                <swipeGestureRecognizer direction="up" id="YA3-VY-DVn">
+                    <connections>
+                        <action selector="factsSwipedUp:" destination="BYZ-38-t0r" id="Tgq-uq-9l8"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="2Au-B1-KAP">
+                    <connections>
+                        <action selector="factsSwipedLeft:" destination="BYZ-38-t0r" id="yQ0-FB-TjN"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="576.5" y="655.875"/>
         </scene>
@@ -126,5 +156,6 @@
     <resources>
         <image name="hedgehog1.jpg" width="948" height="532"/>
         <image name="hedgehog2.jpg" width="620" height="413"/>
+        <image name="hedgehog3.jpeg" width="300" height="168"/>
     </resources>
 </document>
