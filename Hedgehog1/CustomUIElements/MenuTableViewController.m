@@ -33,6 +33,9 @@
 
 
 - (NSArray *)items {
+    //get items from plist
+//    NSString *listResource = [
+    
     
     return @[@"Hello", @"Two", @"Three"];
 }
@@ -50,6 +53,13 @@
     return newCell;
     
     
+}
+
+
+- (void)tableView:(UITableView *)tableView
+        willDisplayCell:(CustomMenuTableViewCell *)cell
+        forRowAtIndexPath:(NSIndexPath *)indexPath{
+    cell.customCellLabel.text = self.items[indexPath.row];
 }
 
 @end
