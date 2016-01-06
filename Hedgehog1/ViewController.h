@@ -26,7 +26,7 @@
 @property (strong, nonatomic) IBOutlet UIImageView *hedgehogSlidingImg;
 @property (strong, nonatomic) IBOutlet UIImageView *swipingHedgehogImg;
 
-- (void)fadeInNextButton;
+//- (void)fadeInNextButton;
 - (void)slidingHedgehogIntoFrame;
 - (void)displayNextButtonIfFactsCompleted;
 - (void)univerSwipeActionWithXOffset:(int)xOffset yOffset:(int)yOffset;
