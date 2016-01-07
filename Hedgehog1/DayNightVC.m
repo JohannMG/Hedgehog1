@@ -17,6 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    self.dayNightMode = NIGHT;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -39,8 +40,8 @@
     //open setting view
     self.dayNightSettingsView = [[DayNightSettings alloc] initWithNibName:@"DayNightSettings" bundle:nil];
     [self.dayNightSettingsView setDelegate:self ];
-    [self.dayNightSettingsView setDayNightSetting:self.dayNightMode];
     [self presentViewController:self.dayNightSettingsView animated:YES completion:^{}];
+    [self.dayNightSettingsView setDayNightSetting:self.dayNightMode];
 }
 
 // DayNightSettingsDelegate method
@@ -48,13 +49,25 @@
     self.dayNightMode = setting;
     
     if (setting == DAY) {
-        NSLog(@"I know it's day");
+        self.dayNightMode = DAY;
+        self.view.backgroundColor = [UIColor colorWithRed:1.00 green:1.00 blue:1.00 alpha:1.00];
+        self.dayNightLabel.text = @"It's Day!";
+        
+        UIImage *sleepingHedgehogImg = [UIImage imageNamed:@"hedgehogSleeping.jpeg"];
+        self.dayNightImg.image = sleepingHedgehogImg;
     }
     
     else  {
-        NSLog(@"I know it's night");
+        self.dayNightMode = NIGHT;
+        self.view.backgroundColor = [UIColor colorWithRed:0.00 green:0.00 blue:0.00 alpha:1.00];
+        self.dayNightLabel.text = @"It's Night!";
+        
+        UIImage *moonImage = [UIImage imageNamed:@"moon.jpeg"];
+        self.dayNightImg.image = moonImage;
+        
+        
     }
-
+    
 }
 
 // DayNightSettingsDelegate method

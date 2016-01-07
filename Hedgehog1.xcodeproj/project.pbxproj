@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ED1E5AE91C3F15710007F483 /* hedgehogSleeping.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = ED1E5AE81C3F15710007F483 /* hedgehogSleeping.jpeg */; };
 		ED908B3B1C3C417800CCACE5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ED908B3A1C3C417800CCACE5 /* main.m */; };
 		ED908B3E1C3C417800CCACE5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ED908B3D1C3C417800CCACE5 /* AppDelegate.m */; };
 		ED908B411C3C417800CCACE5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED908B401C3C417800CCACE5 /* ViewController.m */; };
@@ -47,6 +48,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		ED1E5AE81C3F15710007F483 /* hedgehogSleeping.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hedgehogSleeping.jpeg; sourceTree = "<group>"; };
 		ED908B361C3C417800CCACE5 /* Hedgehog1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hedgehog1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED908B3A1C3C417800CCACE5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		ED908B3C1C3C417800CCACE5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -175,6 +177,7 @@
 		EDCFE62A1C3C617300F0F6C1 /* hedgeHogFactPhotos */ = {
 			isa = PBXGroup;
 			children = (
+				ED1E5AE81C3F15710007F483 /* hedgehogSleeping.jpeg */,
 				EDCDEEB51C3EEB480080A3CE /* moon.jpeg */,
 				EDCDEEB61C3EEB480080A3CE /* sun.png */,
 				EDCFE6241C3C614800F0F6C1 /* hedgehog1.jpg */,
@@ -314,6 +317,7 @@
 				EDCFE6271C3C614800F0F6C1 /* hedgehog1.jpg in Resources */,
 				EDCFE62C1C3D784C00F0F6C1 /* hedgehogExamples.plist in Resources */,
 				EDCDEEB81C3EEB480080A3CE /* sun.png in Resources */,
+				ED1E5AE91C3F15710007F483 /* hedgehogSleeping.jpeg in Resources */,
 				EDCDEEB71C3EEB480080A3CE /* moon.jpeg in Resources */,
 				ED908B491C3C417800CCACE5 /* LaunchScreen.storyboard in Resources */,
 				ED908B461C3C417800CCACE5 /* Assets.xcassets in Resources */,
