@@ -51,11 +51,10 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
     CustomMenuTableViewCell *newCell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
     newCell.customCellLabel.text = @"Hello";
-    
     return newCell;
-    
     
 }
 
@@ -64,7 +63,11 @@
         willDisplayCell:(CustomMenuTableViewCell *)cell
         forRowAtIndexPath:(NSIndexPath *)indexPath{
     
+    UIImage *hedgehogImg = [UIImage imageNamed:@"hedgehog1.jpg"];
+    
+    cell.customCellImg.image = hedgehogImg;
     cell.customCellLabel.text = self.items[indexPath.row];
+    
 }
 
 //this controller becomes the delegator.
@@ -72,19 +75,29 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    NSLog(@"clicked %ld" , indexPath.row);
+    UIViewController *newVC;
     
-    UIViewController *newVC = [[DayNightVC alloc] initWithNibName: @"DayNightView" bundle: nil];
-    [self.navigationController pushViewController: newVC animated: YES ];
-//    [self.navigationController pushViewController:newVC animated:YES];
+    switch (indexPath.row) {
+        
+        //Day+Night Selected
+        case 0:
+            newVC = [[DayNightVC alloc] initWithNibName: @"DayNightView" bundle: nil];
+            [self.navigationController pushViewController: newVC animated: YES ];
+            break;
+            
+        //Weather Selected
+        case 1:
+            newVC = [[DayNightVC alloc] initWithNibName: @"DayNightView" bundle: nil];
+            [self.navigationController pushViewController: newVC animated: YES];
+            break;
+            
+        case 2:
+            break;
+            
+        default:
+            break;
+    }
     
-    /*
-     ViewController *viewController = [[ViewController alloc] init];
-     [self.navigationController pushViewController:viewController animated:YES];
-     
-     self.viewController = [[BarViewController alloc] initWithNibName:@"BarView" bundle:nil];
-
-     */
     
 }
 

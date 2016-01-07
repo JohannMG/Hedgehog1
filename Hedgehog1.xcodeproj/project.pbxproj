@@ -15,6 +15,10 @@
 		ED908B491C3C417800CCACE5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED908B471C3C417800CCACE5 /* LaunchScreen.storyboard */; };
 		ED908B541C3C417800CCACE5 /* Hedgehog1Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = ED908B531C3C417800CCACE5 /* Hedgehog1Tests.m */; };
 		ED908B5F1C3C417800CCACE5 /* Hedgehog1UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = ED908B5E1C3C417800CCACE5 /* Hedgehog1UITests.m */; };
+		EDCDEEB71C3EEB480080A3CE /* moon.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = EDCDEEB51C3EEB480080A3CE /* moon.jpeg */; };
+		EDCDEEB81C3EEB480080A3CE /* sun.png in Resources */ = {isa = PBXBuildFile; fileRef = EDCDEEB61C3EEB480080A3CE /* sun.png */; };
+		EDCDEEBE1C3EEEEB0080A3CE /* DayNightSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = EDCDEEBC1C3EEEEB0080A3CE /* DayNightSettings.m */; };
+		EDCDEEBF1C3EEEEB0080A3CE /* DayNightSettings.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDCDEEBD1C3EEEEB0080A3CE /* DayNightSettings.xib */; };
 		EDCFE6271C3C614800F0F6C1 /* hedgehog1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EDCFE6241C3C614800F0F6C1 /* hedgehog1.jpg */; };
 		EDCFE6281C3C614800F0F6C1 /* hedgehog2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EDCFE6251C3C614800F0F6C1 /* hedgehog2.jpg */; };
 		EDCFE6291C3C614800F0F6C1 /* hedgehog3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = EDCFE6261C3C614800F0F6C1 /* hedgehog3.jpeg */; };
@@ -59,6 +63,11 @@
 		ED908B5A1C3C417800CCACE5 /* Hedgehog1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Hedgehog1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED908B5E1C3C417800CCACE5 /* Hedgehog1UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Hedgehog1UITests.m; sourceTree = "<group>"; };
 		ED908B601C3C417800CCACE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDCDEEB51C3EEB480080A3CE /* moon.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = moon.jpeg; sourceTree = "<group>"; };
+		EDCDEEB61C3EEB480080A3CE /* sun.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sun.png; sourceTree = "<group>"; };
+		EDCDEEBB1C3EEEEB0080A3CE /* DayNightSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DayNightSettings.h; sourceTree = "<group>"; };
+		EDCDEEBC1C3EEEEB0080A3CE /* DayNightSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DayNightSettings.m; sourceTree = "<group>"; };
+		EDCDEEBD1C3EEEEB0080A3CE /* DayNightSettings.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DayNightSettings.xib; sourceTree = "<group>"; };
 		EDCFE6241C3C614800F0F6C1 /* hedgehog1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hedgehog1.jpg; sourceTree = "<group>"; };
 		EDCFE6251C3C614800F0F6C1 /* hedgehog2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hedgehog2.jpg; sourceTree = "<group>"; };
 		EDCFE6261C3C614800F0F6C1 /* hedgehog3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hedgehog3.jpeg; sourceTree = "<group>"; };
@@ -166,6 +175,8 @@
 		EDCFE62A1C3C617300F0F6C1 /* hedgeHogFactPhotos */ = {
 			isa = PBXGroup;
 			children = (
+				EDCDEEB51C3EEB480080A3CE /* moon.jpeg */,
+				EDCDEEB61C3EEB480080A3CE /* sun.png */,
 				EDCFE6241C3C614800F0F6C1 /* hedgehog1.jpg */,
 				EDCFE6251C3C614800F0F6C1 /* hedgehog2.jpg */,
 				EDCFE6261C3C614800F0F6C1 /* hedgehog3.jpeg */,
@@ -187,6 +198,9 @@
 		EDCFE6461C3EB03100F0F6C1 /* DayNight */ = {
 			isa = PBXGroup;
 			children = (
+				EDCDEEBB1C3EEEEB0080A3CE /* DayNightSettings.h */,
+				EDCDEEBC1C3EEEEB0080A3CE /* DayNightSettings.m */,
+				EDCDEEBD1C3EEEEB0080A3CE /* DayNightSettings.xib */,
 				EDCFE6431C3EB01400F0F6C1 /* DayNightVC.h */,
 				EDCFE6441C3EB01400F0F6C1 /* DayNightVC.m */,
 				EDCFE6471C3EB07900F0F6C1 /* DayNightView.xib */,
@@ -299,8 +313,11 @@
 			files = (
 				EDCFE6271C3C614800F0F6C1 /* hedgehog1.jpg in Resources */,
 				EDCFE62C1C3D784C00F0F6C1 /* hedgehogExamples.plist in Resources */,
+				EDCDEEB81C3EEB480080A3CE /* sun.png in Resources */,
+				EDCDEEB71C3EEB480080A3CE /* moon.jpeg in Resources */,
 				ED908B491C3C417800CCACE5 /* LaunchScreen.storyboard in Resources */,
 				ED908B461C3C417800CCACE5 /* Assets.xcassets in Resources */,
+				EDCDEEBF1C3EEEEB0080A3CE /* DayNightSettings.xib in Resources */,
 				EDCFE6481C3EB07900F0F6C1 /* DayNightView.xib in Resources */,
 				ED908B441C3C417800CCACE5 /* Main.storyboard in Resources */,
 				EDCFE6291C3C614800F0F6C1 /* hedgehog3.jpeg in Resources */,
@@ -335,6 +352,7 @@
 				EDCFE6451C3EB01400F0F6C1 /* DayNightVC.m in Sources */,
 				ED908B3B1C3C417800CCACE5 /* main.m in Sources */,
 				EDCFE63D1C3DB7DF00F0F6C1 /* MenuTableViewController.m in Sources */,
+				EDCDEEBE1C3EEEEB0080A3CE /* DayNightSettings.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

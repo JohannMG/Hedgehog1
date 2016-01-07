@@ -22,6 +22,7 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+    
 }
 
 /*
@@ -33,5 +34,29 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+- (IBAction)optionsButtonTouched:(UIButton *)sender forEvent:(UIEvent *)event {
+    //open setting view
+}
+
+// DayNightSettingsDelegate method
+- (void) updateDayNightSetting: (DayNightSet)setting{
+    self.dayNightMode = setting;
+    
+    if (setting == DAY) {
+        NSLog(@"I know it's day");
+    }
+    
+    else  {
+        NSLog(@"I know it's night");
+    }
+
+}
+
+// DayNightSettingsDelegate method
+- (void) closeSettingsPanel{
+    return;
+    
+}
 
 @end

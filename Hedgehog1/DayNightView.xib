@@ -7,6 +7,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DayNightVC">
             <connections>
+                <outlet property="dayNightImg" destination="aND-Mn-crs" id="K5W-Wa-CDp"/>
+                <outlet property="dayNightLabel" destination="fpr-Cz-vSg" id="Tcx-Cj-6XU"/>
+                <outlet property="optionsButton" destination="XYV-Ya-XNu" id="piy-QX-PYS"/>
                 <outlet property="view" destination="iN0-l3-epB" id="2mz-zC-2QR"/>
             </connections>
         </placeholder>
@@ -15,16 +18,31 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Here is a label for Day/Night" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tQB-Gm-zFG">
-                    <rect key="frame" x="101" y="357" width="213" height="21"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="moon.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="aND-Mn-crs">
+                    <rect key="frame" x="44" y="157" width="327" height="265"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Night" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fpr-Cz-vSg">
+                    <rect key="frame" x="44" y="461" width="327" height="25"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XYV-Ya-XNu">
+                    <rect key="frame" x="283" y="620" width="123" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <state key="normal" title="Options"/>
+                    <connections>
+                        <action selector="optionsButtonTouched:forEvent:" destination="-1" eventType="touchUpInside" id="Jqr-F8-C9A"/>
+                    </connections>
+                </button>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
             <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+            <point key="canvasLocation" x="426" y="588"/>
         </view>
     </objects>
+    <resources>
+        <image name="moon.jpeg" width="1054" height="1085"/>
+    </resources>
 </document>

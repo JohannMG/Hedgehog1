@@ -7,7 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DayNightSettings.h"
 
-@interface DayNightVC : UIViewController
+
+@interface DayNightVC : UIViewController <DayNightSettingsDelegate>
+
+@property (strong, nonatomic) IBOutlet UILabel *dayNightLabel;
+@property (strong, nonatomic) IBOutlet UIButton *optionsButton;
+@property (strong, nonatomic) IBOutlet UIImageView *dayNightImg;
+@property (nonatomic) DayNightSet dayNightMode;
+
+
+- (IBAction)optionsButtonTouched:(UIButton *)sender forEvent:(UIEvent *)event;
 
 @end
