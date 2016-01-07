@@ -8,11 +8,11 @@
 
 #import "DayNightVC.h"
 
-@interface DayNight ()
+@interface DayNightVC ()
 
 @end
 
-@implementation DayNight
+@implementation DayNightVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];

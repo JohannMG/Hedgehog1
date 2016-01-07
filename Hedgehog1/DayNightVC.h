@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DayNight : UIViewController
+@interface DayNightVC : UIViewController
 
 @end

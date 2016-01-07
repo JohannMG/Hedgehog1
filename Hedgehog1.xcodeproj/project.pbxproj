@@ -126,6 +126,7 @@
 				ED908B3F1C3C417800CCACE5 /* ViewController.h */,
 				ED908B401C3C417800CCACE5 /* ViewController.m */,
 				ED908B421C3C417800CCACE5 /* Main.storyboard */,
+				EDCFE62B1C3D784C00F0F6C1 /* hedgehogExamples.plist */,
 				EDCFE6461C3EB03100F0F6C1 /* DayNight */,
 				EDCFE6371C3D9E9100F0F6C1 /* TableMenu */,
 				ED908B451C3C417800CCACE5 /* Assets.xcassets */,
@@ -179,7 +180,6 @@
 				EDCFE63F1C3DB8E500F0F6C1 /* CustomMenuTableViewCell.m */,
 				EDCFE63B1C3DB7DF00F0F6C1 /* MenuTableViewController.h */,
 				EDCFE63C1C3DB7DF00F0F6C1 /* MenuTableViewController.m */,
-				EDCFE62B1C3D784C00F0F6C1 /* hedgehogExamples.plist */,
 			);
 			name = TableMenu;
 			sourceTree = "<group>";

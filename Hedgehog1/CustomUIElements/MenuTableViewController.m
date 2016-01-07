@@ -34,10 +34,15 @@
 
 - (NSArray *)items {
     //get items from plist
-//    NSString *listResource = [
+    NSString *listResource = [[NSBundle mainBundle]
+                              pathForResource:@"hedgehogExamples" ofType:@"plist" ];
+    
+    NSDictionary *dataItems = [[NSDictionary alloc] initWithContentsOfFile:listResource];
+    NSArray *menuItems = dataItems[@"HedgeHogs"][@"facts"];
+    NSLog(@"menu items %@", menuItems);
     
     
-    return @[@"Hello", @"Two", @"Three"];
+    return menuItems;
 }
 
 
@@ -59,7 +64,16 @@
 - (void)tableView:(UITableView *)tableView
         willDisplayCell:(CustomMenuTableViewCell *)cell
         forRowAtIndexPath:(NSIndexPath *)indexPath{
+    
     cell.customCellLabel.text = self.items[indexPath.row];
+}
+
+//this controller becomes the delegator.
+//this event fired when an item in the list is selected
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    NSLog(@"clicked %ld" , indexPath.row);
 }
 
 @end
