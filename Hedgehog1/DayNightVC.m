@@ -37,6 +37,10 @@
 
 - (IBAction)optionsButtonTouched:(UIButton *)sender forEvent:(UIEvent *)event {
     //open setting view
+    self.dayNightSettingsView = [[DayNightSettings alloc] initWithNibName:@"DayNightSettings" bundle:nil];
+    [self.dayNightSettingsView setDelegate:self ];
+    [self.dayNightSettingsView setDayNightSetting:self.dayNightMode];
+    [self presentViewController:self.dayNightSettingsView animated:YES completion:^{}];
 }
 
 // DayNightSettingsDelegate method
@@ -55,7 +59,7 @@
 
 // DayNightSettingsDelegate method
 - (void) closeSettingsPanel{
-    return;
+    [self dismissViewControllerAnimated:YES completion:^{}];
     
 }
 

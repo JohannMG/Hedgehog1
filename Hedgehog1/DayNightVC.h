@@ -16,6 +16,7 @@
 @property (strong, nonatomic) IBOutlet UIButton *optionsButton;
 @property (strong, nonatomic) IBOutlet UIImageView *dayNightImg;
 @property (nonatomic) DayNightSet dayNightMode;
+@property (strong, nonatomic)DayNightSettings *dayNightSettingsView;
 
 
 - (IBAction)optionsButtonTouched:(UIButton *)sender forEvent:(UIEvent *)event;
