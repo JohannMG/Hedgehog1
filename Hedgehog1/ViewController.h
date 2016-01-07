@@ -40,8 +40,5 @@
 - (IBAction)factsSwipedLeft:(UISwipeGestureRecognizer *)sender;
 
 
-
-
-
 @end
 
