@@ -19,9 +19,6 @@
 }
 */
 
-
-//un-removed. i'm still figuring things out here... 
-     //Removed b/c this no longer acts a controller, just manages the table
  
 - (void)viewDidLoad
 {
