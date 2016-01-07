@@ -8,6 +8,7 @@
 
 #import "MenuTableViewController.h"
 #import "CustomMenuTableViewCell.h"
+#import "DayNightVC.h"
 
 @implementation MenuTableViewController
 
@@ -41,22 +42,16 @@
     
     NSDictionary *dataItems = [[NSDictionary alloc] initWithContentsOfFile:listResource];
     NSArray *menuItems = dataItems[@"HedgeHogs"][@"facts"];
-    NSLog(@"menu items %@", menuItems);
-    
-    
     return menuItems;
 }
 
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    
-    NSLog(@"returned count");
     return 3;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     CustomMenuTableViewCell *newCell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
-    
     newCell.customCellLabel.text = @"Hello";
     
     return newCell;
@@ -78,6 +73,19 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
     NSLog(@"clicked %ld" , indexPath.row);
+    
+    UIViewController *newVC = [[DayNightVC alloc] initWithNibName: @"DayNightView" bundle: nil];
+    [self.navigationController pushViewController: newVC animated: YES ];
+//    [self.navigationController pushViewController:newVC animated:YES];
+    
+    /*
+     ViewController *viewController = [[ViewController alloc] init];
+     [self.navigationController pushViewController:viewController animated:YES];
+     
+     self.viewController = [[BarViewController alloc] initWithNibName:@"BarView" bundle:nil];
+
+     */
+    
 }
 
 @end

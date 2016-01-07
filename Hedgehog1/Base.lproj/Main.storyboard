@@ -155,10 +155,10 @@
             </objects>
             <point key="canvasLocation" x="576" y="655"/>
         </scene>
-        <!--Root View Controller-->
+        <!--Hedgehog Options-->
         <scene sceneID="1Z1-5q-FdR">
             <objects>
-                <tableViewController id="1uw-Og-FUN" customClass="MenuTableViewController" sceneMemberID="viewController">
+                <tableViewController title="Hedgehog Options" id="1uw-Og-FUN" customClass="MenuTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="79" sectionHeaderHeight="28" sectionFooterHeight="28" id="nuj-t0-hla">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -193,12 +193,12 @@
                             <outlet property="delegate" destination="1uw-Og-FUN" id="HLG-qN-GBT"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="FNR-PY-o81"/>
+                    <navigationItem key="navigationItem" title="Hedgehog Options!" id="FNR-PY-o81"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ylj-nP-WnV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1580" y="1284"/>
+            <point key="canvasLocation" x="1601" y="723"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="40A-SG-3UA">
@@ -215,7 +215,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qcv-L8-U6B" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1085" y="1284"/>
+            <point key="canvasLocation" x="1069" y="723"/>
         </scene>
     </scenes>
     <resources>
