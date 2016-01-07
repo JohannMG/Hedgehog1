@@ -19,6 +19,10 @@
 }
 */
 
+
+//un-removed. i'm still figuring things out here... 
+     //Removed b/c this no longer acts a controller, just manages the table
+ 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -30,6 +34,7 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+ 
 
 
 - (NSArray *)items {
@@ -47,6 +52,8 @@
 
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    
+    NSLog(@"returned count");
     return 3;
 }
 
