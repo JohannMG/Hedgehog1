@@ -19,9 +19,10 @@
 		EDCFE6281C3C614800F0F6C1 /* hedgehog2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EDCFE6251C3C614800F0F6C1 /* hedgehog2.jpg */; };
 		EDCFE6291C3C614800F0F6C1 /* hedgehog3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = EDCFE6261C3C614800F0F6C1 /* hedgehog3.jpeg */; };
 		EDCFE62C1C3D784C00F0F6C1 /* hedgehogExamples.plist in Resources */ = {isa = PBXBuildFile; fileRef = EDCFE62B1C3D784C00F0F6C1 /* hedgehogExamples.plist */; };
-		EDCFE6301C3D7F1200F0F6C1 /* testview.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDCFE62F1C3D7F1200F0F6C1 /* testview.xib */; };
 		EDCFE63D1C3DB7DF00F0F6C1 /* MenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDCFE63C1C3DB7DF00F0F6C1 /* MenuTableViewController.m */; };
 		EDCFE6401C3DB8E500F0F6C1 /* CustomMenuTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EDCFE63F1C3DB8E500F0F6C1 /* CustomMenuTableViewCell.m */; };
+		EDCFE6451C3EB01400F0F6C1 /* DayNightVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EDCFE6441C3EB01400F0F6C1 /* DayNightVC.m */; };
+		EDCFE6481C3EB07900F0F6C1 /* DayNightView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDCFE6471C3EB07900F0F6C1 /* DayNightView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,11 +63,13 @@
 		EDCFE6251C3C614800F0F6C1 /* hedgehog2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hedgehog2.jpg; sourceTree = "<group>"; };
 		EDCFE6261C3C614800F0F6C1 /* hedgehog3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hedgehog3.jpeg; sourceTree = "<group>"; };
 		EDCFE62B1C3D784C00F0F6C1 /* hedgehogExamples.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = hedgehogExamples.plist; sourceTree = "<group>"; };
-		EDCFE62F1C3D7F1200F0F6C1 /* testview.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = testview.xib; sourceTree = "<group>"; };
 		EDCFE63B1C3DB7DF00F0F6C1 /* MenuTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MenuTableViewController.h; path = CustomUIElements/MenuTableViewController.h; sourceTree = "<group>"; };
 		EDCFE63C1C3DB7DF00F0F6C1 /* MenuTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MenuTableViewController.m; path = CustomUIElements/MenuTableViewController.m; sourceTree = "<group>"; };
 		EDCFE63E1C3DB8E500F0F6C1 /* CustomMenuTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomMenuTableViewCell.h; path = CustomUIElements/CustomMenuTableViewCell.h; sourceTree = "<group>"; };
 		EDCFE63F1C3DB8E500F0F6C1 /* CustomMenuTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomMenuTableViewCell.m; path = CustomUIElements/CustomMenuTableViewCell.m; sourceTree = "<group>"; };
+		EDCFE6431C3EB01400F0F6C1 /* DayNightVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DayNightVC.h; sourceTree = "<group>"; };
+		EDCFE6441C3EB01400F0F6C1 /* DayNightVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DayNightVC.m; sourceTree = "<group>"; };
+		EDCFE6471C3EB07900F0F6C1 /* DayNightView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DayNightView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,8 +126,8 @@
 				ED908B3F1C3C417800CCACE5 /* ViewController.h */,
 				ED908B401C3C417800CCACE5 /* ViewController.m */,
 				ED908B421C3C417800CCACE5 /* Main.storyboard */,
+				EDCFE6461C3EB03100F0F6C1 /* DayNight */,
 				EDCFE6371C3D9E9100F0F6C1 /* TableMenu */,
-				EDCFE62F1C3D7F1200F0F6C1 /* testview.xib */,
 				ED908B451C3C417800CCACE5 /* Assets.xcassets */,
 				ED908B471C3C417800CCACE5 /* LaunchScreen.storyboard */,
 				ED908B4A1C3C417800CCACE5 /* Info.plist */,
@@ -179,6 +182,16 @@
 				EDCFE62B1C3D784C00F0F6C1 /* hedgehogExamples.plist */,
 			);
 			name = TableMenu;
+			sourceTree = "<group>";
+		};
+		EDCFE6461C3EB03100F0F6C1 /* DayNight */ = {
+			isa = PBXGroup;
+			children = (
+				EDCFE6431C3EB01400F0F6C1 /* DayNightVC.h */,
+				EDCFE6441C3EB01400F0F6C1 /* DayNightVC.m */,
+				EDCFE6471C3EB07900F0F6C1 /* DayNightView.xib */,
+			);
+			name = DayNight;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -284,11 +297,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EDCFE6301C3D7F1200F0F6C1 /* testview.xib in Resources */,
 				EDCFE6271C3C614800F0F6C1 /* hedgehog1.jpg in Resources */,
 				EDCFE62C1C3D784C00F0F6C1 /* hedgehogExamples.plist in Resources */,
 				ED908B491C3C417800CCACE5 /* LaunchScreen.storyboard in Resources */,
 				ED908B461C3C417800CCACE5 /* Assets.xcassets in Resources */,
+				EDCFE6481C3EB07900F0F6C1 /* DayNightView.xib in Resources */,
 				ED908B441C3C417800CCACE5 /* Main.storyboard in Resources */,
 				EDCFE6291C3C614800F0F6C1 /* hedgehog3.jpeg in Resources */,
 				EDCFE6281C3C614800F0F6C1 /* hedgehog2.jpg in Resources */,
@@ -319,6 +332,7 @@
 				ED908B411C3C417800CCACE5 /* ViewController.m in Sources */,
 				EDCFE6401C3DB8E500F0F6C1 /* CustomMenuTableViewCell.m in Sources */,
 				ED908B3E1C3C417800CCACE5 /* AppDelegate.m in Sources */,
+				EDCFE6451C3EB01400F0F6C1 /* DayNightVC.m in Sources */,
 				ED908B3B1C3C417800CCACE5 /* main.m in Sources */,
 				EDCFE63D1C3DB7DF00F0F6C1 /* MenuTableViewController.m in Sources */,
 			);
