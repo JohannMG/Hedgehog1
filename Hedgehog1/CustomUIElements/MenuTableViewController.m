@@ -9,6 +9,7 @@
 #import "MenuTableViewController.h"
 #import "CustomMenuTableViewCell.h"
 #import "DayNightVC.h"
+#import "WeatherViewController.h"
 
 @implementation MenuTableViewController
 
@@ -87,8 +88,8 @@
             
         //Weather Selected
         case 1:
-            newVC = [[DayNightVC alloc] initWithNibName: @"DayNightView" bundle: nil];
-            [self.navigationController pushViewController: newVC animated: YES];
+            newVC = [[WeatherViewController alloc] initWithNibName:@"WeatherViewController" bundle:nil];
+            [self.navigationController pushViewController:newVC animated:YES];
             break;
             
         case 2:
