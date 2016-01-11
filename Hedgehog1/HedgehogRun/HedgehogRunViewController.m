@@ -7,6 +7,8 @@
 //
 
 #import "HedgehogRunViewController.h"
+#import "ViewController.h"
+
 
 @interface HedgehogRunViewController ()
 
@@ -20,17 +22,19 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     self.animationPerimeterPadding = 0; //pixel ui 'points'
+    self.animationLenth = 0.5; //how long each leg of animation takes
     
 }
 
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
-    [self setupBoundingBox];
-    [self placeSonicAtStart];
+
 }
 
 -(void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
+    [self setupBoundingBox];
+    [self placeSonicAtStart];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -67,10 +71,15 @@
 
 - (IBAction)runButtonAction:(UIButton *)sender forEvent:(UIEvent *)event {
     
-    //TODO: disable the button until the end
-//    self.runButton.hidden = true;
+    self.runButton.hidden = true;
     [self runAnimation];
     
+}
+
+- (void)goToRootStory {
+    UIStoryboard *story = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    UIViewController *rootVC = [story instantiateInitialViewController];
+    [self presentViewController:rootVC animated:YES completion:^{}];
 }
 
 - (IBAction)setImgAtStart:(UIButton *)sender forEvent:(UIEvent *)event {
@@ -99,10 +108,39 @@
         else {
             return ^(BOOL finished){
                 animationBlocks = nil;
-                //TODO: add alert view logic here to replay/restart
-            };
-        }
-    };
+                
+                UIAlertController *finishedAlert =
+                    [UIAlertController alertControllerWithTitle:@"SO FAST!"
+                                                        message:@"Would you like to make him run again?"
+                                                 preferredStyle: UIAlertControllerStyleAlert
+                 ];
+                
+                UIAlertAction *runAgain =
+                    [UIAlertAction actionWithTitle:@"Run Again"
+                                             style:UIAlertActionStyleDefault
+                                           handler:^(UIAlertAction * _Nonnull action) {
+                                               [finishedAlert dismissViewControllerAnimated:YES completion:nil];
+                                               [self runAnimation];
+                                            }];
+                
+                UIAlertAction *restart =
+                    [UIAlertAction actionWithTitle:@"Beginning"
+                                             style:UIAlertActionStyleDestructive
+                                           handler:^(UIAlertAction * _Nonnull action) {
+                                               [finishedAlert dismissViewControllerAnimated:YES completion:nil];
+                                               [self goToRootStory];
+                                           }];
+                
+                [finishedAlert addAction:runAgain];
+                [finishedAlert addAction:restart];
+                
+                [self presentViewController:finishedAlert animated:YES completion:nil];
+                
+                
+                
+            };//end return block
+        }//end else
+    };//end animationBlock
     
     //------------animations---------------
     
@@ -111,7 +149,7 @@
     topRight.origin.x = self.boundingBox.maxX - self.sonicImg.bounds.size.width;
     
     [animationBlocks addObject:^(BOOL finished){
-        [UIView animateWithDuration:2.0
+        [UIView animateWithDuration:_animationLenth
                               delay:0
                             options:UIViewAnimationOptionCurveEaseInOut
                          animations:^{
@@ -127,7 +165,7 @@
     bottomRight.origin.y = self.boundingBox.maxY - self.sonicImg.bounds.size.height;
     
     [animationBlocks addObject:^(BOOL finished){
-        [UIView animateWithDuration:2.0
+        [UIView animateWithDuration:_animationLenth
                               delay:0
                             options:UIViewAnimationOptionCurveEaseInOut
                          animations:^{
@@ -142,7 +180,7 @@
     CGRect bottomLeft = bottomRight;
     bottomLeft.origin.x = self.boundingBox.minX;
     [animationBlocks addObject:^{
-        [UIView animateWithDuration:2.0
+        [UIView animateWithDuration:_animationLenth
                               delay:0
                             options:UIViewAnimationOptionCurveEaseInOut
                          animations:^{
@@ -157,7 +195,7 @@
     CGRect topLeftStart = bottomLeft;
     topLeftStart.origin.y = self.boundingBox.minY;
     [animationBlocks addObject:^{
-        [UIView animateWithDuration:2.0
+        [UIView animateWithDuration:_animationLenth
                               delay:0
                             options:UIViewAnimationOptionCurveEaseInOut
                          animations:^{

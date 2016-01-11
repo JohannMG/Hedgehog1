@@ -24,12 +24,13 @@ typedef struct {
 @property (weak, nonatomic) IBOutlet UIImageView *sonicImg;
 
 @property (nonatomic) float animationPerimeterPadding;
+@property (nonatomic) float animationLenth; 
 @property (nonatomic) AnimationBoundingRect boundingBox;
 
 
 - (IBAction)runButtonAction:(UIButton *)sender forEvent:(UIEvent *)event;
-- (IBAction)setImgAtStart:(UIButton *)sender forEvent:(UIEvent *)event;
--(void)setupBoundingBox;
+- (void)setupBoundingBox;
+- (void)goToRootStory;
 
 
 @end

@@ -8,7 +8,7 @@
         <!--Facts-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController title="Facts" id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FactsScene" title="Facts" id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
