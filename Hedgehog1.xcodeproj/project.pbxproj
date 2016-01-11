@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		18CD802BF21C228926745DE7 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C1E92E07B5D229ACD5967BA /* libPods.a */; };
 		ED1E5AE91C3F15710007F483 /* hedgehogSleeping.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = ED1E5AE81C3F15710007F483 /* hedgehogSleeping.jpeg */; };
+		ED1E92541C43F38300F2F759 /* sonic.png in Resources */ = {isa = PBXBuildFile; fileRef = ED1E92531C43F38300F2F759 /* sonic.png */; };
+		ED1E92581C43F3C900F2F759 /* HedgehogRunViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED1E92561C43F3C900F2F759 /* HedgehogRunViewController.m */; };
+		ED1E92591C43F3C900F2F759 /* HedgehogRunViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED1E92571C43F3C900F2F759 /* HedgehogRunViewController.xib */; };
 		ED908B3B1C3C417800CCACE5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ED908B3A1C3C417800CCACE5 /* main.m */; };
 		ED908B3E1C3C417800CCACE5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ED908B3D1C3C417800CCACE5 /* AppDelegate.m */; };
 		ED908B411C3C417800CCACE5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED908B401C3C417800CCACE5 /* ViewController.m */; };
@@ -57,6 +60,10 @@
 		7659D4D794AE11E37151E0B1 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		8C1E92E07B5D229ACD5967BA /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED1E5AE81C3F15710007F483 /* hedgehogSleeping.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hedgehogSleeping.jpeg; sourceTree = "<group>"; };
+		ED1E92531C43F38300F2F759 /* sonic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sonic.png; sourceTree = "<group>"; };
+		ED1E92551C43F3C900F2F759 /* HedgehogRunViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HedgehogRunViewController.h; path = HedgehogRun/HedgehogRunViewController.h; sourceTree = "<group>"; };
+		ED1E92561C43F3C900F2F759 /* HedgehogRunViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HedgehogRunViewController.m; path = HedgehogRun/HedgehogRunViewController.m; sourceTree = "<group>"; };
+		ED1E92571C43F3C900F2F759 /* HedgehogRunViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HedgehogRunViewController.xib; path = HedgehogRun/HedgehogRunViewController.xib; sourceTree = "<group>"; };
 		ED908B361C3C417800CCACE5 /* Hedgehog1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hedgehog1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED908B3A1C3C417800CCACE5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		ED908B3C1C3C417800CCACE5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -142,6 +149,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		ED1E925A1C43F3F900F2F759 /* Hedgehog Run */ = {
+			isa = PBXGroup;
+			children = (
+				ED1E92551C43F3C900F2F759 /* HedgehogRunViewController.h */,
+				ED1E92561C43F3C900F2F759 /* HedgehogRunViewController.m */,
+				ED1E92571C43F3C900F2F759 /* HedgehogRunViewController.xib */,
+			);
+			name = "Hedgehog Run";
+			sourceTree = "<group>";
+		};
 		ED908B2D1C3C417800CCACE5 = {
 			isa = PBXGroup;
 			children = (
@@ -175,6 +192,7 @@
 				ED908B401C3C417800CCACE5 /* ViewController.m */,
 				ED908B421C3C417800CCACE5 /* Main.storyboard */,
 				EDCFE62B1C3D784C00F0F6C1 /* hedgehogExamples.plist */,
+				ED1E925A1C43F3F900F2F759 /* Hedgehog Run */,
 				EDCFE6461C3EB03100F0F6C1 /* DayNight */,
 				EDCFE6371C3D9E9100F0F6C1 /* TableMenu */,
 				EDF7EF001C3FF82F00001C98 /* Weather */,
@@ -215,6 +233,7 @@
 		EDCFE62A1C3C617300F0F6C1 /* hedgeHogFactPhotos */ = {
 			isa = PBXGroup;
 			children = (
+				ED1E92531C43F38300F2F759 /* sonic.png */,
 				EDB263241C40415A00A66F9E /* blurry-city.jpg */,
 				ED1E5AE81C3F15710007F483 /* hedgehogSleeping.jpeg */,
 				EDCDEEB51C3EEB480080A3CE /* moon.jpeg */,
@@ -376,11 +395,13 @@
 				EDCDEEB71C3EEB480080A3CE /* moon.jpeg in Resources */,
 				ED908B491C3C417800CCACE5 /* LaunchScreen.storyboard in Resources */,
 				ED908B461C3C417800CCACE5 /* Assets.xcassets in Resources */,
+				ED1E92541C43F38300F2F759 /* sonic.png in Resources */,
 				EDCDEEBF1C3EEEEB0080A3CE /* DayNightSettings.xib in Resources */,
 				EDB263251C40415A00A66F9E /* blurry-city.jpg in Resources */,
 				EDCFE6481C3EB07900F0F6C1 /* DayNightView.xib in Resources */,
 				ED908B441C3C417800CCACE5 /* Main.storyboard in Resources */,
 				EDCFE6291C3C614800F0F6C1 /* hedgehog3.jpeg in Resources */,
+				ED1E92591C43F3C900F2F759 /* HedgehogRunViewController.xib in Resources */,
 				EDF7EF021C3FF89A00001C98 /* Podfile in Resources */,
 				EDCFE6281C3C614800F0F6C1 /* hedgehog2.jpg in Resources */,
 			);
@@ -456,6 +477,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED908B411C3C417800CCACE5 /* ViewController.m in Sources */,
+				ED1E92581C43F3C900F2F759 /* HedgehogRunViewController.m in Sources */,
 				EDCFE6401C3DB8E500F0F6C1 /* CustomMenuTableViewCell.m in Sources */,
 				EDB263231C403E2A00A66F9E /* OrlandoWeatherService.m in Sources */,
 				ED908B3E1C3C417800CCACE5 /* AppDelegate.m in Sources */,

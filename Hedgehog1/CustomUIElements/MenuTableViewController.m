@@ -10,6 +10,7 @@
 #import "CustomMenuTableViewCell.h"
 #import "DayNightVC.h"
 #import "WeatherViewController.h"
+#import "HedgehogRunViewController.h"
 
 @implementation MenuTableViewController
 
@@ -93,6 +94,8 @@
             break;
             
         case 2:
+            newVC = [[HedgehogRunViewController alloc] initWithNibName:@"HedgehogRunViewController" bundle:nil];
+            [self.navigationController pushViewController:newVC animated:YES];
             break;
             
         default:
